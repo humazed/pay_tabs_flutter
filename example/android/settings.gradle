@@ -1,4 +1,6 @@
-include ':app', ':paytabs_sdk-v4.0.1'
+apply from: '../../settings.gradle'
+
+include ':app'
 
 def localPropertiesFile = new File(rootProject.projectDir, "local.properties")
 def properties = new Properties()
